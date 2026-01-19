@@ -1,0 +1,22 @@
+name: near_wallet_adapter
+description: Wallet adapter for NEAR Protocol - connect, sign and send transactions.
+version: 0.1.0
+repository: https://github.com/0xjesus/NearFlutter
+issue_tracker: https://github.com/0xjesus/NearFlutter/issues
+
+environment:
+  sdk: ^3.9.0
+
+resolution: workspace
+
+dependencies:
+  near_jsonrpc_types:
+    path: ../near_jsonrpc_types
+  near_jsonrpc_client:
+    path: ../near_jsonrpc_client
+  equatable: ^2.0.7
+  meta: ^1.16.0
+
+dev_dependencies:
+  test: ^1.25.8
+  mocktail: ^1.0.4

@@ -104,6 +104,9 @@ class NearToken extends Equatable {
   /// Creates a NearToken representing zero.
   factory NearToken.zero() => NearToken._(BigInt.zero);
 
+  /// Creates a NearToken representing 1 yoctoNEAR (smallest unit).
+  factory NearToken.oneYocto() => NearToken._(BigInt.one);
+
   /// Creates a NearToken from a yoctoNEAR string.
   factory NearToken.fromYocto(String yoctoNear) {
     return NearToken._(BigInt.parse(yoctoNear));

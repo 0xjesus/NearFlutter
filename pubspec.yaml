@@ -7,3 +7,4 @@ environment:
 workspace:
   - packages/near_jsonrpc_types
   - packages/near_jsonrpc_client
+  - packages/near_wallet_adapter
