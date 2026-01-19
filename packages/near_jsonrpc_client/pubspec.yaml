@@ -1,17 +1,21 @@
 name: near_jsonrpc_client
-description: Type-safe Dart client for NEAR Protocol JSON-RPC API. Platform agnostic.
+description: Type-safe Dart client for NEAR Protocol JSON-RPC API. Works on iOS, Android, Web, Desktop.
 version: 0.1.0
-repository: https://github.com/0xJesus/NearFlutter
-homepage: https://near.org
+homepage: https://0xj.dev
+repository: https://github.com/0xjesus/near_jsonrpc_client
+issue_tracker: https://github.com/0xjesus/near_jsonrpc_client/issues
+topics:
+  - near
+  - blockchain
+  - web3
+  - crypto
+  - rpc
 
 environment:
   sdk: ^3.9.0
 
-resolution: workspace
-
 dependencies:
-  near_jsonrpc_types:
-    path: ../near_jsonrpc_types
+  near_jsonrpc_types: ^0.1.0
   http: ^1.3.0
   json_annotation: ^4.9.0
   meta: ^1.16.0
