@@ -1,0 +1,9 @@
+name: near_flutter_workspace
+description: NEAR Protocol Flutter/Dart SDK - RPC Client and Types
+
+environment:
+  sdk: ^3.9.0
+
+workspace:
+  - packages/near_jsonrpc_types
+  - packages/near_jsonrpc_client

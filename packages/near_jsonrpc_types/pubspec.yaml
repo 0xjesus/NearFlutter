@@ -1,0 +1,20 @@
+name: near_jsonrpc_types
+description: Type-safe models for NEAR Protocol JSON-RPC API. Generated from OpenAPI spec.
+version: 0.1.0
+repository: https://github.com/0xJesus/NearFlutter
+homepage: https://near.org
+
+environment:
+  sdk: ^3.9.0
+
+resolution: workspace
+
+dependencies:
+  json_annotation: ^4.9.0
+  equatable: ^2.0.7
+  meta: ^1.16.0
+
+dev_dependencies:
+  test: ^1.25.0
+  json_serializable: ^6.9.4
+  build_runner: ^2.4.15

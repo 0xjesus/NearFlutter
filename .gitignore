@@ -1,0 +1,49 @@
+# Dart/Flutter
+.dart_tool/
+.packages
+build/
+pubspec.lock
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# macOS
+.DS_Store
+
+# Android
+**/android/.gradle/
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.*
+
+# iOS
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/App.framework/
+**/ios/Flutter/Flutter.framework/
+**/ios/Flutter/Flutter.podspec
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# Web
+**/web/favicon.png
+**/web/icons/
+
+# Coverage
+coverage/
+
+# Test
+.test_coverage.dart
+
+# Generated
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+
+# Secrets
+*.env
+credentials.json

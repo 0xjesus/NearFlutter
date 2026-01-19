@@ -1,0 +1,47 @@
+name: Publish to pub.dev
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish-types:
+    name: Publish Types Package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+
+      - name: Install dependencies
+        run: dart pub get
+
+      - name: Publish near_jsonrpc_types
+        run: |
+          cd packages/near_jsonrpc_types
+          dart pub publish --force
+        env:
+          PUB_TOKEN: ${{ secrets.PUB_TOKEN }}
+
+  publish-client:
+    name: Publish Client Package
+    runs-on: ubuntu-latest
+    needs: publish-types
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+
+      - name: Install dependencies
+        run: dart pub get
+
+      - name: Publish near_jsonrpc_client
+        run: |
+          cd packages/near_jsonrpc_client
+          dart pub publish --force
+        env:
+          PUB_TOKEN: ${{ secrets.PUB_TOKEN }}
